@@ -2,7 +2,7 @@
 
 cd $BUILD_SOURCESDIRECTORY
 
-clang++ --version
+apt list --installed | grep clang
 
 if [[ $TASK == "pylint" ]]; then
     conda install -y -n $CONDA_ENV pycodestyle
